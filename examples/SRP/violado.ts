@@ -13,12 +13,12 @@ class Aluno {
 
   private validaCpf(cpf: number) {}
   private validaEmail(email: string) {}
-  private createAlunoRepository() {}
+  private salvaBancoDados() {}
 
   public salvaCadastro() {
     this.validaCpf(this.cpf);
     this.validaEmail(this.email);
 
-    this.createAlunoRepository();
+    this.salvaBancoDados();
   }
 }
