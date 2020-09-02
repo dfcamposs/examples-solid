@@ -18,25 +18,29 @@ class AlunoRef {
 }
 
 class AlunoService {
-  public cadastraAluno(aluno: AlunoRef) {
+  public async cadastraAluno(aluno: AlunoRef) {
     aluno.validaDados();
     const repository = new AlunoRepository();
-    repository.create(aluno);
+    await repository.create(aluno);
   }
 }
 
 class AlunoRepository {
-  public create(aluno: AlunoRef) {}
+  public async create(aluno: AlunoRef) {
+    /*...*/
+  }
 }
 
 class CPFService {
   public static validaCpf(cpf: number): boolean {
+    /*...*/
     return true;
   }
 }
 
 class EmailService {
   public static validaEmail(email: string): boolean {
+    /*...*/
     return true;
   }
 }

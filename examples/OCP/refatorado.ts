@@ -2,22 +2,22 @@ abstract class BoletimRef {
   public abstract lancaNotas(alunoId: number, nota: number): void;
 }
 
-class MateriaEducacaoFisica implements BoletimRef {
+class DisciplinaEducacaoFisica implements BoletimRef {
   lancaNotas(alunoId: number, nota: number) {
-    //lança nota na matéria de educação fisica
+    //lança nota na disciplina de educação fisica
     //matricular no campeonato anual para notas > 75%
   }
 }
 
-class MateriaMatematica implements BoletimRef {
+class DisciplinaMatematica implements BoletimRef {
   lancaNotas(alunoId: number, nota: number) {
-    //lança nota na matéria de matemática
+    //lança nota na disciplina de matemática
     //indicar para olimpiadas de matemática para notas > 80%
   }
 }
 
-class MateriaCiencias implements BoletimRef {
+class DisciplinaCiencias implements BoletimRef {
   lancaNotas(alunoId: number, nota: number) {
-    //lança nota na matéria de ciências
+    //lança nota na disciplina de ciências
   }
 }

@@ -11,9 +11,15 @@ class Aluno {
     this.cpf = cpf;
   }
 
-  private validaCpf(cpf: number) {}
-  private validaEmail(email: string) {}
-  private salvaBancoDados() {}
+  private validaCpf(cpf: number) {
+    /*...*/
+  }
+  private validaEmail(email: string) {
+    /*...*/
+  }
+  private salvaBancoDados() {
+    /*...*/
+  }
 
   public salvaCadastro() {
     this.validaCpf(this.cpf);
